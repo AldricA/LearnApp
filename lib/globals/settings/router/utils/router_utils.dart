@@ -1,4 +1,4 @@
-// Create enum to represent different routes
+// represents different routes
 enum APP_PAGE {
   onboard,
   auth,
@@ -7,7 +7,7 @@ enum APP_PAGE {
 
 
 extension AppPageExtension on APP_PAGE {
-  // create path for routes
+  // routes path
   String get routePath {
     switch (this) {
       case APP_PAGE.home:
@@ -41,7 +41,7 @@ extension AppPageExtension on APP_PAGE {
     }
   }
 
-// for page titles to use on appbar
+// page title
   String get routePageTitle {
     switch (this) {
       case APP_PAGE.home:

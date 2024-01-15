@@ -4,9 +4,6 @@ import 'package:LearnApp/screens/home/home.dart';
 
 
 void main() async {
-  //  concrete binding for applications based on the Widgets framewor
-  WidgetsFlutterBinding.ensureInitialized();
-
   SystemChrome.setSystemUIOverlayStyle(
     SystemUiOverlayStyle.dark.copyWith(statusBarColor: Colors.black38),
   );
