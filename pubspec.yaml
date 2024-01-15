@@ -1,0 +1,43 @@
+name: LearnApp
+description: "Flutter exercises"
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_native_splash: ^2.3.9
+  flutter_launcher_icons: ^0.13.1
+  go_router: ^13.0.1
+  shared_preferences: ^2.2.2
+  provider : ^6.1.1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/splash/home_splash.jpeg
+    - assets/splash/home_splash_1152x1152.jpeg
+    - assets/splash/icon.jpeg
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/splash/icon.jpeg"
+  adaptive_icon_background: "#FFD1A6"
+  adaptive_icon_foreground: "assets/splash/icon.jpeg"
+
+flutter_native_splash:
+  background_image: "assets/splash/home_splash.jpeg"
+  android_12:
+    image: assets/splash/home_splash_1152x1152.jpeg
